@@ -24,6 +24,7 @@ export const RulesDialog = ({
     <Dialog.Portal>
       <Dialog.Overlay className="DialogOverlay" />
       <Dialog.Content className="DialogContent">
+        <Dialog.Title className="DialogTitle">{name} Rules</Dialog.Title>
         <Dialog.Description className="text-slate-600 font-semibold text-[16px] flex gap-x-3 border-b-base-white border-b p-4 sticky top-0 z-20 bg-white">
           <ServiceIcon name={name} />
           {name}
