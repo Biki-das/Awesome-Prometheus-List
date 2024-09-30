@@ -11,7 +11,7 @@ export const Footer = () => {
         <p className="ml-auto text-slate-400 text-[12px] font-medium leading-[16px]">
           Maintained by{" "}
         </p>
-        <img className="ml-2" src="./last9io.svg" />
+        <img className="ml-2 h-[20px] w-[20px]" src="./last9io.svg" />
       </section>
     </footer>
   );
