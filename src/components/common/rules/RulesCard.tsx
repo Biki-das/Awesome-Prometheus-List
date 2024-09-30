@@ -16,7 +16,7 @@ export const RulesCard = ({ name, rules, slug }: RulesCardProps) => {
   };
 
   return (
-    <div className="border border-slate-100 rounded-sm p-4">
+    <li className="border border-slate-100 rounded-sm p-4">
       <CardHeader name={name} />
       <RulesSummary rules={rules} />
       <ViewRulesButton
@@ -31,6 +31,6 @@ export const RulesCard = ({ name, rules, slug }: RulesCardProps) => {
         rules={rules}
         ruleData={ruleData}
       />
-    </div>
+    </li>
   );
 };
