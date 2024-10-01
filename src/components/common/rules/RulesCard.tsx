@@ -7,6 +7,8 @@ import { RulesDialog } from "./RulesDialog";
 import { useRuleData } from "../../../hooks/useRules";
 
 export const RulesCard = ({ name, rules, slug }: RulesCardProps) => {
+  console.log(rules);
+
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const { loading, error, ruleData, fetchRuleData } = useRuleData(name, slug);
 

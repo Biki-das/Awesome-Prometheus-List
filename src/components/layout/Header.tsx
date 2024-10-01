@@ -10,13 +10,11 @@ export function Header() {
           <FireIcon />
           <ThunderIcon className="mt-1" />
         </div>
-        <p className="text-xl-medium text-lg font-medium text-[20px] ml-[8px] leading-[0.9] mt-1">
+        <p className="text-xl-medium text-lg font-medium ml-[8px] leading-[0.9] mt-1">
           Awesome <br /> Prometheus <br /> Toolkit
         </p>
         <GithubIcon className="ml-auto mr-[4px] self-end " />
-        <p className="text-xs-medium self-end text-[12px] font-medium">
-          125 stars
-        </p>
+        <p className="text-xs-medium self-end text-xs font-medium">125 stars</p>
       </div>
     </header>
   );

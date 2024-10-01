@@ -15,10 +15,7 @@ export const RulesSummary = ({ rules }: RulesSummaryProps) => {
       </Label>
       <>
         {displayedRules?.map((rule, index) => (
-          <span
-            key={index}
-            className="font-medium text-[12px] text-slate-400 ml-1 leading-[16px]"
-          >
+          <span key={index} className="font-medium text-xs text-slate-400 ml-1">
             {rule.name}
             {index < displayedRules.length - 1
               ? ","

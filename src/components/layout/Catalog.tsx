@@ -27,7 +27,7 @@ export function Catalog() {
 
   return (
     <main className="w-[80%] mx-auto py-12">
-      <h1 className="text-xl-medium font-medium text-[20px]">Browse Library</h1>
+      <h1 className="text-xl-medium font-medium text-xl">Browse Library</h1>
       <SearchInput
         searchTerm={searchTerm}
         onSearchChange={handleSearchChange}

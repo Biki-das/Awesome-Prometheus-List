@@ -15,7 +15,7 @@ export const ViewRulesButton = ({
     <Button
       onClick={onClick}
       loading={loading}
-      className="mt-4 mx-auto border border-slate-200 w-full items-center justify-center px-4 py-2 text-slate-600  font-semibold text-[12px] rounded-md"
+      className="mt-4 mx-auto border border-slate-200 w-full items-center justify-center px-4 py-2 text-slate-600  font-semibold text-xs rounded-md"
     >
       View Alert Rules
     </Button>

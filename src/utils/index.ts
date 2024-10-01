@@ -1,4 +1,12 @@
 import { Rule } from "./types";
+
+export function validateDescription(description: string) {
+  return `"${description
+    .replaceAll(`\n`, `\\n`)
+    .replaceAll(`"{{`, `\\"{{`)
+    .replaceAll(`}}"`, `}}\\"`)}"`;
+}
+
 export function getYaml(rule: Rule) {
   return `
   - alert: ${rule.alert}
@@ -8,6 +16,6 @@ export function getYaml(rule: Rule) {
       severity: ${rule.labels.severity}
     annotations:
       summary: ${rule.annotations.summary}
-      description: ${rule.annotations.description}
+      description: ${validateDescription(rule.annotations.description)}
   `.trim();
 }

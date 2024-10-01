@@ -1,21 +1,14 @@
 export const Footer = () => {
   return (
     <footer className="border-t-2 border-t-slate-100">
-      <section className="w-[80%] mx-auto flex p-4 items-center">
-        <a
-          className="text-xs-medium font-medium text-[12px] leading-[16px]"
-          href="/"
-        >
+      <section className="w-[83%] mx-auto flex p-4 items-center">
+        <a className="text-xs-medium font-medium text-xs" href="/">
           Contribute on Github
         </a>
-        <p className="ml-auto text-slate-400 text-[12px] font-medium leading-[16px]">
+        <p className="ml-auto text-slate-400 text-xs font-medium">
           Maintained by{" "}
         </p>
-        <img
-          alt="brand-image"
-          className="ml-2 h-[20px] w-[20px]"
-          src="./last9io.svg"
-        />
+        <img alt="brand-image" className="ml-2 h-5 w-5" src="./last9io.svg" />
       </section>
     </footer>
   );
