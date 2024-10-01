@@ -36,7 +36,7 @@ export const RulesDialog = ({
           <Dialog.Close asChild>
             <Button
               onClick={() => onOpenChange(false)}
-              className="w-[11px] h-[11px] ml-auto"
+              className="w-5 h-5 ml-auto"
               icon={<CloseIcon />}
             ></Button>
           </Dialog.Close>
